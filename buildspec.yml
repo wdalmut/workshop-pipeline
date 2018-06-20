@@ -6,4 +6,7 @@ phases:
       - zip -r app.zip *
 artifacts:
   files:
+    - appspec.yml
+    - code/*
+    - bin/*
     - app.zip
