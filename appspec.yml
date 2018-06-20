@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /code
+    destination: /var/www/html
+hooks:
+  AfterInstall:
+    - location: bin/permissions.sh
+      timeout: 300
+      runas: root
